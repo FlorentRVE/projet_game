@@ -3,7 +3,7 @@ const app = express();
 const path = require('path');
 
 //recup route
-// const characterRoutes = require('./route/character');
+const characterRoutes = require('./route/character');
 const userRoutes = require('./route/user');
 
 app.use((req, res, next) => {
@@ -20,7 +20,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 // Routes
-// app.use('/api/character', characterRoutes);
+app.use('/api/character', characterRoutes);
 app.use('/api/user', userRoutes);
 
 module.exports = app;
