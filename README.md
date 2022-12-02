@@ -169,7 +169,7 @@ Par la suite on séparera la logique de notre application app elle-même en plus
 Le Routage fait référence à la définition de points finaux d’application (URI) et à la façon dont ils répondent aux demandes client.
 
 Exemple :
-```
+```javascript
  app.get('/exemple', function afficher (req, res) {
   res.send('Hello World!');
 });
