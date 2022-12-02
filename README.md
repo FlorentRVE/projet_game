@@ -1,4 +1,4 @@
-## Sommaire
+# Sommaire
 
     ## 1. Structure et fonctionnement du projet
 Présentation du projet
@@ -22,7 +22,7 @@ Test avec Postman
 
 
 
-## 1) Structure et fonctionnement du projet
+# 1) Structure et fonctionnement du projet
 
 L’utilisateur arrive sur une page d’accueil qui redirige vers une page de connexion. 
 
