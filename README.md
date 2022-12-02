@@ -49,19 +49,19 @@ Le jeu est crée en utilisant Kaboom,js, une librairie Javascript permettant la 
 
 
 
-## 2) Partie CSS : TailwindCSS
+### 2) Partie CSS : TailwindCSS
 
 Un framework « utility-first » permettant de définir des composants et design grâce à des classes prédéfinis.
 
-**Installation via NPM (On aura déjà installé Nodejs à ce stade):**
+***Installation via NPM (On aura déjà installé Nodejs à ce stade):***
 
 Commande pour installer via npm
 > `npm install -D tailwindcss`
 
 Commande pour créer le fichier ‘tailwind.config.js’
-npx tailwindcss init
+> `npx tailwindcss init`
 
-Le fichier tailwind.config.js permet de faire la configuration
+Le fichier **tailwind.config.js** permet de faire la configuration
 Dans la partie content on va y mettre le chemin des fichiers à surveiller
 
 
@@ -74,9 +74,15 @@ Dans la partie content on va y mettre le chemin des fichiers à surveiller
 
 
 On crée ensuite un fichier style.css dans un dossier css où on collera :
+
+```
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+```
+
 Ces directives vont représenter toutes les classes utilitaires , composant etc que l’on peut utiliser avec Tailwind
 On exécute ensuite la commande suivante :
 npx tailwindcss -i ./css/style.css -o ./dist/style.css –watch
