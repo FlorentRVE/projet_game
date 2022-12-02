@@ -161,7 +161,7 @@ On va voir comment va se structurer notre API par la suite.
 
 ### >app.js est notre application Express
 
-Par la suite on séparera la logique de notre application app elle-même en plusieurs morceaux (même si il est possible de tout mettre dans un même fichier.)
+Dans la suite on séparera la logique de notre application app en plusieurs morceaux (même si il est possible de tout mettre dans un même fichier.)
 
 ### >Un dossier Route qui va contenir des routes qu’on aura défini grâce à la classe express.Router. On peut considérer cela comme une mini application qui gérera exclusivement les routes.
 
