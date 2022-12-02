@@ -53,10 +53,10 @@ Le jeu est crée en utilisant Kaboom,js, une librairie Javascript permettant la 
 
 Un framework « utility-first » permettant de définir des composants et design grâce à des classes prédéfinis.
 
-Installation via NPM (On aura déjà installé Nodejs à ce stade):
+*Installation via NPM (On aura déjà installé Nodejs à ce stade):*
 
 Commande pour installer via npm
-npm install -D tailwindcss
+> npm install -D tailwindcss
 
 Commande pour créer le fichier ‘tailwind.config.js’
 npx tailwindcss init
