@@ -1,5 +1,3 @@
-![Cover](https://github.com/FlorentRVE/projet_game/schema.PNG)
-
 ## Sommaire
 
     ## 1. Structure et fonctionnement du projet
@@ -184,3 +182,5 @@ Cela permet d’avoir un code mieux organisé et plus lisible surtout quand on a
     • Un dossier Model qui va contenir tout ce qui est relatif aux données qu’on utilisera dans notre API, cela pourra être une connection à une BDD ou un fichier JSON par exemple. 
 
 On aura donc en résumé une structure comme tel :
+
+![Cover](https://github.com/FlorentRVE/projet_game/schema.png)
