@@ -38,7 +38,7 @@ En cliquant sur un personnage on est redirigé vers la page du jeu ou celui ci s
 Le jeu est crée en utilisant Kaboom,js, une librairie Javascript permettant la création simple de jeux.
 
 
-## 2) Frontend : HTML et CSS de base avec TailwindCSS
+# 2) Frontend : HTML et CSS de base avec TailwindCSS
 
 ## 1) Structure HTML :
 
