@@ -183,4 +183,4 @@ Cela permet d’avoir un code mieux organisé et plus lisible surtout quand on a
 
 On aura donc en résumé une structure comme tel :
 
-![Cover](https://github.com/FlorentRVE/projet_game/schema.png)
+![Cover](https://github.com/FlorentRVE/projet_game/blob/5689e3dc27ab0238947565d923415f0958e9dcfb/schema.png))
