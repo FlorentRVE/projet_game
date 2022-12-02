@@ -158,13 +158,13 @@ On va voir comment va se structurer notre API par la suite.
 
 ## 3) Structure de notre application API:
 
-### server.js est le point d’entrée de l’application et s’occupera seulement de la logique serveur ( écoute de port, gestion d’erreur etc)
+### 1) server.js est le point d’entrée de l’application et s’occupera seulement de la logique serveur ( écoute de port, gestion d’erreur etc)
 
-### app.js est notre application Express
+### 2) app.js est notre application Express
 
 Par la suite on séparera la logique de notre application app elle-même en plusieurs morceaux (même si il est possible de tout mettre dans un même fichier.)
 
-### Un dossier Route qui va contenir des routes qu’on aura défini grâce à la classe express.Router. On peut considérer cela comme une mini application qui gérera exclusivement les routes.
+### 3) Un dossier Route qui va contenir des routes qu’on aura défini grâce à la classe express.Router. On peut considérer cela comme une mini application qui gérera exclusivement les routes.
 
 Le Routage fait référence à la définition de points finaux d’application (URI) et à la façon dont ils répondent aux demandes client.
 
@@ -177,8 +177,8 @@ Exemple :
 Exécute la fonction afficher si il y a une requête GET à l’adresse ‘ /exemple’
 
 
-### Un dossier Controller qui va contenir les middlewares  qu’on aura aussi défini et qui seront liés à une route.
-Les **middlewares** sont des fonctions qui peuvent accéder à la requête HTTP (l’objet Request (req)) et permet d’établir les réponses à ces requêtes (l’objet Response (res)). 
+### 4) Un dossier Controller qui va contenir les middlewares  qu’on aura aussi défini et qui seront liés à une route.
+Les **middlewares** sont des fonctions qui peuvent accéder à la requête HTTP (l’objet Request (**req**)) et permet d’établir les réponses à ces requêtes (l’objet Response (**res**)). 
 
 Ainsi pour reprendre l’exemple précédent on aura :
 
@@ -186,13 +186,13 @@ Exemple :
 ```javascript
  app.get('/exemple', fichierController.afficher);
 ```
-La fonction « afficher » (que l’on peut maintenant appeller middleware vu que c’est le bon terme) est alors défini dans un fichier séparé fichierController.
+Le middleware **afficher** est alors défini dans un fichier séparé fichierController.
 Fichier que l’on va importer pour pouvoir l’utiliser.
 
 Cela permet d’avoir un code mieux organisé et plus lisible surtout quand on aura des middlewares plus long et complexe.
 
 
-### Un dossier Model qui va contenir tout ce qui est relatif aux données qu’on utilisera dans notre API, cela pourra être une connection à une BDD ou un fichier JSON par exemple. 
+### 5) Un dossier Model qui va contenir tout ce qui est relatif aux données qu’on utilisera dans notre API, cela pourra être une connection à une BDD ou un fichier JSON par exemple. 
 
 On aura donc en résumé une structure comme tel :
 
