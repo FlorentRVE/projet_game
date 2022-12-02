@@ -28,7 +28,7 @@ L’utilisateur arrive sur une page d’accueil qui redirige vers une page de co
 
 La page de connexion demande un couple d’identifiant ( Pseudo/Mot de passe).
 Les identifiants sont prédéfinis dans la partie Backend.
-Un appel de l’API avec le verbe POST permet d’envoyer les identifiants rentrés en input et de vérifier si ils sont présent dans la base de donnée (Ici un fichier JSON).
+Un appel de l’API avec le verbe POST permet d’envoyer les identifiants rentrés en input et de vérifier si ils sont présent dans la base de donnée (Ici un fichier JS).
 
 Si les identifiant sont bien présent dans la BDD, l’utilisateur est redirigé vers une page permettant de sélectionner son personnage.
 Les personnages sont aussi prédéfinis dans un fichier JSON dans le backend.
