@@ -1,13 +1,13 @@
 # Sommaire
 
 #### 1. Structure et fonctionnement du projet
-Présentation du projet
+> Présentation du projet
 
 #### 2. Frontend : Base html / css avec utilisation de Tailwindcss
 
-Structure html de base 3 pages : index, signup, login
-Installation de tailwindcss (détailler)
-Utilisation basique Tailwindcss
+>Structure html de base 3 pages : index, signup, login
+>Installation de tailwindcss (détailler)
+>Utilisation basique Tailwindcss
 
 #### 3. Backend : Nodejs et express
 
