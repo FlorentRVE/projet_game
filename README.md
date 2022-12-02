@@ -40,7 +40,7 @@ Le jeu est crée en utilisant Kaboom,js, une librairie Javascript permettant la 
 
 # 2) Frontend : HTML et CSS de base avec TailwindCSS
 
-## 1) Structure HTML :
+### 1) Structure HTML :
 
     • Page d’accueil : index.html
     • Page de connexion : login.html
