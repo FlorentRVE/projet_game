@@ -78,11 +78,12 @@ On crée ensuite un fichier style.css dans un dossier css où on collera :
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 ```
 Ces directives vont représenter toutes les classes utilitaires , composant etc que l’on peut utiliser avec Tailwind
 On exécute ensuite la commande suivante :
+```
 npx tailwindcss -i ./css/style.css -o ./dist/style.css –watch
+```
 Elle va scanner notre fichier style.css contenant les directives en input et ressortir un fichier CSS en output dans un dossier dist créer automatiquement, qu’on utilisera sur nos pages.
 
 Ce fichier CSS contient un reset de base. Par la suite à chaque utilisation de Tailwind dans le code HTML, ce code sera modifier dynamiquement et le nouveau css sera ajouté à la suite du reset.
