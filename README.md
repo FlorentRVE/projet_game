@@ -14,7 +14,6 @@ Utilisation basique Tailwindcss
 Installation Nodejs et express
 Mise en place de l’api
 Configuration server > app > route > model > controller
-Test avec Postman
 
     ## 4. Frontend : ajout du JS pour appeler L’API et récupérer/envoyer données
 
