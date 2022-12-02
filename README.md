@@ -1,23 +1,23 @@
 # Sommaire
 
-### 1. Structure et fonctionnement du projet
+> 1. Structure et fonctionnement du projet
 Présentation du projet
 
-### 2. Frontend : Base html / css avec utilisation de Tailwindcss
+> 2. Frontend : Base html / css avec utilisation de Tailwindcss
 
 Structure html de base 3 pages : index, signup, login
 Installation de tailwindcss (détailler)
 Utilisation basique Tailwindcss
 
-### 3. Backend : Nodejs et express
+> 3. Backend : Nodejs et express
 
 Installation Nodejs et express
 Mise en place de l’api
 Configuration server > app > route > model > controller
 
-### 4. Frontend : ajout du JS pour appeler L’API et récupérer/envoyer données
+> 4. Frontend : ajout du JS pour appeler L’API et récupérer/envoyer données
 
-### 5. Création du jeu avec Kaboom JS
+> 5. Création du jeu avec Kaboom JS
 
 
 
