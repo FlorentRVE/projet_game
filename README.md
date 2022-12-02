@@ -74,15 +74,12 @@ Dans la partie content on va y mettre le chemin des fichiers à surveiller
 
 
 On crée ensuite un fichier style.css dans un dossier css où on collera :
-
 ```
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 ```
-
 Ces directives vont représenter toutes les classes utilitaires , composant etc que l’on peut utiliser avec Tailwind
 On exécute ensuite la commande suivante :
 npx tailwindcss -i ./css/style.css -o ./dist/style.css –watch
