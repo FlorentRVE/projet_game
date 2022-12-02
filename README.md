@@ -56,12 +56,12 @@ Un framework « utility-first » permettant de définir des composants et desi
 ***Installation via NPM (On aura déjà installé Nodejs à ce stade):***
 
 Commande pour installer via npm
-```
+```javascript
 npm install -D tailwindcss
 ```
 
 Commande pour créer le fichier ‘tailwind.config.js’
-```
+```javascript
 npx tailwindcss init
 ```
 
@@ -78,14 +78,14 @@ Dans la partie content on va y mettre le chemin des fichiers à surveiller
 
 
 On crée ensuite un fichier style.css dans un dossier css où on collera :
-```
+```javascript
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 ```
 Ces directives vont représenter toutes les classes utilitaires , composant etc que l’on peut utiliser avec Tailwind
 On exécute ensuite la commande suivante :
-```
+```javascript
 npx tailwindcss -i ./css/style.css -o ./dist/style.css –watch
 ```
 Elle va scanner notre fichier style.css contenant les directives en **input** et ressortir un fichier CSS en **output** dans un dossier *dist* créer automatiquement, qu’on utilisera sur nos pages.
@@ -118,18 +118,18 @@ Installation  de NodeJS:
 
 Direction le site officiel de Nodejs pour télécharger la dernière version.
 Pour vérifier sa version de node on utilisera les commandes suivantes :
-```
+```javascript
 node -v
 ```
 ou
-```
+```javascript
 node --version
 ```
 Initier son projet:
 
 Une fois Node installé et avec lui NPM, on va pouvoir initier notre projet.
 Pour cela on exécute la commande :
-```
+```javascript
 npm init
 ```
 On peut appuyer entrée pour passer toutes les question sauf à la question « définir un point d’entrée » on choisi **server.js** (que l’on va créer ensuite).
@@ -147,7 +147,7 @@ Ce point d’entrée server.js est le fichier JS à partir duquel l’exécution
 Express est un framework reposant sur Node, qui facilite la création et la gestion des serveurs Node 
 
 Installation  d’Express:
-```
+```javascript
 npm install express
 ```
 Une fois installé, on crée un fichier **app.js** qui contiendra notre application Express.
@@ -183,7 +183,7 @@ Les **middlewares** sont des fonctions qui peuvent accéder à la requête HTTP 
 Ainsi pour reprendre l’exemple précédent on aura :
 
 Exemple :
-```
+```javascript
  app.get('/exemple', fichierController.afficher);
 ```
 La fonction « afficher » (que l’on peut maintenant appeller middleware vu que c’est le bon terme) est alors défini dans un fichier séparé fichierController.
