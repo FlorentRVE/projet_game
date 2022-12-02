@@ -88,7 +88,7 @@ On exécute ensuite la commande suivante :
 ```
 npx tailwindcss -i ./css/style.css -o ./dist/style.css –watch
 ```
-Elle va scanner notre fichier style.css contenant les directives en input et ressortir un fichier CSS en output dans un dossier dist créer automatiquement, qu’on utilisera sur nos pages.
+Elle va scanner notre fichier style.css contenant les directives en **input** et ressortir un fichier CSS en **output** dans un dossier *dist* créer automatiquement, qu’on utilisera sur nos pages.
 
 Ce fichier CSS contient un reset de base. Par la suite à chaque utilisation de Tailwind dans le code HTML, ce code sera modifier dynamiquement et le nouveau css sera ajouté à la suite du reset.
 Le **« --watch »** permet de rester à l’écoute des changements et modifier le fichier CSS dynamiquement.
@@ -98,8 +98,8 @@ Le **« --watch »** permet de rester à l’écoute des changements et modifi
 
 
 On se retrouve alors avec cette structure. 
-« Node_modules » et les autres fichiers ont été généré automatiquement lors de l’installation de Tailwind via NPM. 
-Le fichier gitignore permet de définir quelles fichiers on ne veut pas uploader sur GitHub. Ici on y ajoute « Node_modules » car volumineux.
+**Node_modules** et les autres fichiers ont été généré automatiquement lors de l’installation de Tailwind via NPM. 
+Le fichier **gitignore** permet de définir quelles fichiers on ne veut pas uploader sur GitHub. Ici on y ajoute « Node_modules » car volumineux.
 
 
 ## 3) Backend : Nodejs et Express
@@ -158,13 +158,14 @@ On va voir comment va se structurer notre API par la suite.
 
 ## 3) Structure de notre application API:
 
-    ### **server.js** est le point d’entrée de l’application et s’occupera seulement de la logique serveur ( écoute de port, gestion d’erreur etc)
+### server.js est le point d’entrée de l’application et s’occupera seulement de la logique serveur ( écoute de port, gestion d’erreur etc)
 
-    ### **app.js** est notre application Express
+### app.js est notre application Express
 
 Par la suite on séparera la logique de notre application app elle-même en plusieurs morceaux (même si il est possible de tout mettre dans un même fichier.)
 
-    ### Un dossier Route qui va contenir des routes qu’on aura défini grâce à la classe express.Router. On peut considérer cela comme une mini application qui gérera exclusivement les routes.
+### Un dossier Route qui va contenir des routes qu’on aura défini grâce à la classe express.Router. On peut considérer cela comme une mini application qui gérera exclusivement les routes.
+
 Le Routage fait référence à la définition de points finaux d’application (URI) et à la façon dont ils répondent aux demandes client.
 
 Exemple :
@@ -176,7 +177,7 @@ Exemple :
 Exécute la fonction afficher si il y a une requête GET à l’adresse ‘ /exemple’
 
 
-    ### Un dossier Controller qui va contenir les middlewares  qu’on aura aussi défini et qui seront liés à une route.
+### Un dossier Controller qui va contenir les middlewares  qu’on aura aussi défini et qui seront liés à une route.
 Les **middlewares** sont des fonctions qui peuvent accéder à la requête HTTP (l’objet Request (req)) et permet d’établir les réponses à ces requêtes (l’objet Response (res)). 
 
 Ainsi pour reprendre l’exemple précédent on aura :
@@ -191,7 +192,7 @@ Fichier que l’on va importer pour pouvoir l’utiliser.
 Cela permet d’avoir un code mieux organisé et plus lisible surtout quand on aura des middlewares plus long et complexe.
 
 
-    ### Un dossier Model qui va contenir tout ce qui est relatif aux données qu’on utilisera dans notre API, cela pourra être une connection à une BDD ou un fichier JSON par exemple. 
+### Un dossier Model qui va contenir tout ce qui est relatif aux données qu’on utilisera dans notre API, cela pourra être une connection à une BDD ou un fichier JSON par exemple. 
 
 On aura donc en résumé une structure comme tel :
 
