@@ -56,10 +56,14 @@ Un framework « utility-first » permettant de définir des composants et desi
 ***Installation via NPM (On aura déjà installé Nodejs à ce stade):***
 
 Commande pour installer via npm
-> `npm install -D tailwindcss`
+```
+npm install -D tailwindcss
+```
 
 Commande pour créer le fichier ‘tailwind.config.js’
-> `npx tailwindcss init`
+```
+npx tailwindcss init
+```
 
 Le fichier **tailwind.config.js** permet de faire la configuration
 Dans la partie content on va y mettre le chemin des fichiers à surveiller
@@ -87,7 +91,7 @@ npx tailwindcss -i ./css/style.css -o ./dist/style.css –watch
 Elle va scanner notre fichier style.css contenant les directives en input et ressortir un fichier CSS en output dans un dossier dist créer automatiquement, qu’on utilisera sur nos pages.
 
 Ce fichier CSS contient un reset de base. Par la suite à chaque utilisation de Tailwind dans le code HTML, ce code sera modifier dynamiquement et le nouveau css sera ajouté à la suite du reset.
-Le « --watch » permet de rester à l’écoute des changements et modifier le fichier CSS dynamiquement.
+Le **« --watch »** permet de rester à l’écoute des changements et modifier le fichier CSS dynamiquement.
 
 
 
@@ -114,20 +118,23 @@ Installation  de NodeJS:
 
 Direction le site officiel de Nodejs pour télécharger la dernière version.
 Pour vérifier sa version de node on utilisera les commandes suivantes :
-
+```
 node -v
+```
 ou
+```
 node --version
-
+```
 Initier son projet:
 
 Une fois Node installé et avec lui NPM, on va pouvoir initier notre projet.
 Pour cela on exécute la commande :
+```
 npm init
+```
+On peut appuyer entrée pour passer toutes les question sauf à la question « définir un point d’entrée » on choisi **server.js** (que l’on va créer ensuite).
 
-On peut appuyer entrée pour passer toutes les question sauf à la question « définir un point d’entrée » on choisi server.js (que l’on va créer ensuite).
-
-Cela va créer un fichier package,json dans lequel on retrouvera les détails des dépendances utilisé dans notre projet.
+Cela va créer un fichier **package.json** dans lequel on retrouvera les détails des dépendances utilisé dans notre projet.
 
 
 
@@ -140,10 +147,10 @@ Ce point d’entrée server.js est le fichier JS à partir duquel l’exécution
 Express est un framework reposant sur Node, qui facilite la création et la gestion des serveurs Node 
 
 Installation  d’Express:
-
+```
 npm install express
-
-Une fois installé, on crée un fichier app.js qui contiendra notre application Express.
+```
+Une fois installé, on crée un fichier **app.js** qui contiendra notre application Express.
 
 A ce stade on a nos 2 fichiers server.js et app.js.
 
@@ -151,39 +158,40 @@ On va voir comment va se structurer notre API par la suite.
 
 ## 3) Structure de notre application API:
 
-    • server.js est le point d’entrée de l’application et s’occupera seulement de la logique serveur ( écoute de port, gestion d’erreur etc)
+    ### **server.js** est le point d’entrée de l’application et s’occupera seulement de la logique serveur ( écoute de port, gestion d’erreur etc)
 
-    • app.js est notre application Express
+    ### **app.js** est notre application Express
 
 Par la suite on séparera la logique de notre application app elle-même en plusieurs morceaux (même si il est possible de tout mettre dans un même fichier.)
 
-    • Un dossier Route qui va contenir des routes qu’on aura défini grâce à la classe express.Router. On peut considérer cela comme une mini application qui gérera exclusivement les routes.
+    ### Un dossier Route qui va contenir des routes qu’on aura défini grâce à la classe express.Router. On peut considérer cela comme une mini application qui gérera exclusivement les routes.
 Le Routage fait référence à la définition de points finaux d’application (URI) et à la façon dont ils répondent aux demandes client.
 
 Exemple :
-
+```
  app.get('/exemple', function afficher (req, res) {
   res.send('Hello World!');
 });
+```
 Exécute la fonction afficher si il y a une requête GET à l’adresse ‘ /exemple’
 
 
-    • Un dossier Controller qui va contenir les middlewares  qu’on aura aussi défini et qui seront liés à une route.
-Les middlewares sont des fonctions qui peuvent accéder à la requête HTTP (l’objet Request (req)) et permet d’établir les réponses à ces requêtes (l’objet Response (res)). 
+    ### Un dossier Controller qui va contenir les middlewares  qu’on aura aussi défini et qui seront liés à une route.
+Les **middlewares** sont des fonctions qui peuvent accéder à la requête HTTP (l’objet Request (req)) et permet d’établir les réponses à ces requêtes (l’objet Response (res)). 
 
 Ainsi pour reprendre l’exemple précédent on aura :
 
 Exemple :
-
+```
  app.get('/exemple', fichierController.afficher);
-
+```
 La fonction « afficher » (que l’on peut maintenant appeller middleware vu que c’est le bon terme) est alors défini dans un fichier séparé fichierController.
 Fichier que l’on va importer pour pouvoir l’utiliser.
 
 Cela permet d’avoir un code mieux organisé et plus lisible surtout quand on aura des middlewares plus long et complexe.
 
 
-    • Un dossier Model qui va contenir tout ce qui est relatif aux données qu’on utilisera dans notre API, cela pourra être une connection à une BDD ou un fichier JSON par exemple. 
+    ### Un dossier Model qui va contenir tout ce qui est relatif aux données qu’on utilisera dans notre API, cela pourra être une connection à une BDD ou un fichier JSON par exemple. 
 
 On aura donc en résumé une structure comme tel :
 
