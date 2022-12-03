@@ -25,16 +25,16 @@ Configuration server > app > route > model > controller
 
 L’utilisateur arrive sur une page d’accueil qui redirige vers une page de connexion. 
 
-La page de connexion demande un couple d’identifiant ( Pseudo/Mot de passe).
-Les identifiants sont prédéfinis dans la partie Backend.
-Un appel de l’API avec le verbe POST permet d’envoyer les identifiants rentrés en input et de vérifier si ils sont présent dans la base de donnée (Ici un fichier JS).
+La page de connexion demande un couple d’identifiant ( Pseudo/Mot de passe).  
+Les identifiants sont prédéfinis dans la partie Backend.  
+Un appel de l’API avec le verbe POST permet d’envoyer les identifiants rentrés en input et de vérifier si ils sont présent dans la base de donnée (Ici un fichier JS).  
 
-Si les identifiant sont bien présent dans la BDD, l’utilisateur est redirigé vers une page permettant de sélectionner son personnage.
-Les personnages sont aussi prédéfinis dans un fichier JSON dans le backend.
-Au chargement de la page, un appel GET est utilisé pour récupérer les informations des personnages et les afficher dynamiquement grâce au DOM.
+Si les identifiant sont bien présent dans la BDD, l’utilisateur est redirigé vers une page permettant de sélectionner son personnage.  
+Les personnages sont aussi prédéfinis dans un fichier JSON dans le backend.  
+Au chargement de la page, un appel GET est utilisé pour récupérer les informations des personnages et les afficher dynamiquement grâce au DOM.  
 
-En cliquant sur un personnage on est redirigé vers la page du jeu ou celui ci se lance avec le dit personnage.
-Le jeu est crée en utilisant Kaboom,js, une librairie Javascript permettant la création simple de jeux.
+En cliquant sur un personnage on est redirigé vers la page du jeu ou celui ci se lance avec le dit personnage.  
+Le jeu est crée en utilisant Kaboom,js, une librairie Javascript permettant la création simple de jeux.  
 
 
 # 2) Frontend : HTML et CSS de base avec TailwindCSS
