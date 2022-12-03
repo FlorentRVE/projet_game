@@ -77,7 +77,7 @@ Dans la partie content on va y mettre le chemin des fichiers à surveiller
 
 
 On crée ensuite un fichier style.css dans un dossier css où on collera :
-```javascript
+```css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
