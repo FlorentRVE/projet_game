@@ -64,8 +64,8 @@ Commande pour créer le fichier ‘tailwind.config.js’
 npx tailwindcss init
 ```
 
-Le fichier **tailwind.config.js** permet de faire la configuration
-Dans la partie content on va y mettre le chemin des fichiers à surveiller
+Le fichier **tailwind.config.js** permet de faire la configuration.  
+Dans la partie content on va y mettre le chemin des fichiers à surveiller  
 
 
 
@@ -86,19 +86,19 @@ Ces directives vont représenter toutes les classes utilitaires , composant etc 
 On exécute ensuite la commande suivante :
 ```javascript
 npx tailwindcss -i ./css/style.css -o ./dist/style.css –watch
-```
-Elle va scanner notre fichier style.css contenant les directives en **input** et ressortir un fichier CSS en **output** dans un dossier *dist* créer automatiquement, qu’on utilisera sur nos pages.
+```  
+Elle va scanner notre fichier style.css contenant les directives en **input** et ressortir un fichier CSS en **output** dans un dossier *dist* créer automatiquement, qu’on utilisera sur nos pages.  
 
-Ce fichier CSS contient un reset de base. Par la suite à chaque utilisation de Tailwind dans le code HTML, ce code sera modifier dynamiquement et le nouveau css sera ajouté à la suite du reset.
-Le **« --watch »** permet de rester à l’écoute des changements et modifier le fichier CSS dynamiquement.
-
-
+Ce fichier CSS contient un reset de base. Par la suite à chaque utilisation de Tailwind dans le code HTML, ce code sera modifier dynamiquement et le nouveau css sera ajouté à la suite du reset.  
+Le **« --watch »** permet de rester à l’écoute des changements et modifier le fichier CSS dynamiquement.  
 
 
 
-On se retrouve alors avec cette structure. 
-**Node_modules** et les autres fichiers ont été généré automatiquement lors de l’installation de Tailwind via NPM. 
-Le fichier **gitignore** permet de définir quelles fichiers on ne veut pas uploader sur GitHub. Ici on y ajoute « Node_modules » car volumineux.
+
+
+On se retrouve alors avec cette structure.   
+**Node_modules** et les autres fichiers ont été généré automatiquement lors de l’installation de Tailwind via NPM.   
+Le fichier **gitignore** permet de définir quelles fichiers on ne veut pas uploader sur GitHub. Ici on y ajoute « Node_modules » car volumineux.  
 
 
 ## 3) Backend : Nodejs et Express
@@ -107,7 +107,8 @@ Ici on va créer notre API appelé par le Front pour afficher les personnages et
 
 ## 1) NodeJS:
 
-Node est le runtime qui permet d'écrire toutes nos tâches côté serveur, en JavaScript. Node ajoute également des fonctionnalités que le JavaScript du navigateur standard ne possède pas, comme par exemple l'accès au système de fichiers local 
+Node est le runtime qui permet d'écrire toutes nos tâches côté serveur, en JavaScript.  
+Node ajoute également des fonctionnalités que le JavaScript du navigateur standard ne possède pas, comme par exemple l'accès au système de fichiers local  
 
 Installation  de NodeJS:
 
@@ -115,7 +116,7 @@ Installation  de NodeJS:
 
 
 
-Direction le site officiel de Nodejs pour télécharger la dernière version.
+Direction le site officiel de Nodejs pour télécharger la dernière version.  
 Pour vérifier sa version de node on utilisera les commandes suivantes :
 ```javascript
 node -v
@@ -131,15 +132,15 @@ Pour cela on exécute la commande :
 ```javascript
 npm init
 ```
-On peut appuyer entrée pour passer toutes les question sauf à la question « définir un point d’entrée » on choisi **server.js** (que l’on va créer ensuite).
+On peut appuyer entrée pour passer toutes les question sauf à la question « définir un point d’entrée » on choisi **server.js** (que l’on va créer ensuite).  
 
-Cela va créer un fichier **package.json** dans lequel on retrouvera les détails des dépendances utilisé dans notre projet.
-
-
+Cela va créer un fichier **package.json** dans lequel on retrouvera les détails des dépendances utilisé dans notre projet.  
 
 
 
-Ce point d’entrée server.js est le fichier JS à partir duquel l’exécution commence.
+
+
+Ce point d’entrée server.js est le fichier JS à partir duquel l’exécution commence.  
 
 ## 2) Express:
 
@@ -148,7 +149,7 @@ Express est un framework reposant sur Node, qui facilite la création et la g
 Installation  d’Express:
 ```javascript
 npm install express
-```
+```  
 Une fois installé, on crée un fichier **app.js** qui contiendra notre application Express.
 
 A ce stade on a nos 2 fichiers server.js et app.js.
