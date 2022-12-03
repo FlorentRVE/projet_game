@@ -67,7 +67,7 @@ npx tailwindcss init
 Le fichier **tailwind.config.js** permet de faire la configuration.  
 Dans la partie content on va y mettre le chemin des fichiers à surveiller  
 
-https://github.com/FlorentRVE/projet_game/blob/1ec5f1dd7d044d8cf1f1fd15aa0c1fb75c0de6c8/img_1.png
+![Cover](https://github.com/FlorentRVE/projet_game/blob/1ec5f1dd7d044d8cf1f1fd15aa0c1fb75c0de6c8/img_1.png)
 
 On crée ensuite un fichier style.css dans un dossier css où on collera :
 ```css
@@ -82,12 +82,12 @@ npx tailwindcss -i ./css/style.css -o ./dist/style.css –watch
 ```  
 Elle va scanner notre fichier style.css contenant les directives en **input** et ressortir un fichier CSS en **output** dans un dossier *dist* créer automatiquement, qu’on utilisera sur nos pages.  
 
-https://github.com/FlorentRVE/projet_game/blob/1ec5f1dd7d044d8cf1f1fd15aa0c1fb75c0de6c8/img_2.png
+![Cover](https://github.com/FlorentRVE/projet_game/blob/1ec5f1dd7d044d8cf1f1fd15aa0c1fb75c0de6c8/img_2.png)
 
 Ce fichier CSS contient un reset de base. Par la suite à chaque utilisation de Tailwind dans le code HTML, ce code sera modifier dynamiquement et le nouveau css sera ajouté à la suite du reset.  
 Le **« --watch »** permet de rester à l’écoute des changements et modifier le fichier CSS dynamiquement.  
 
-https://github.com/FlorentRVE/projet_game/blob/1ec5f1dd7d044d8cf1f1fd15aa0c1fb75c0de6c8/img_3.png
+![Cover](https://github.com/FlorentRVE/projet_game/blob/1ec5f1dd7d044d8cf1f1fd15aa0c1fb75c0de6c8/img_3.png)
 
 On se retrouve alors avec cette structure.   
 **Node_modules** et les autres fichiers ont été généré automatiquement lors de l’installation de Tailwind via NPM.   
@@ -105,7 +105,7 @@ Node ajoute également des fonctionnalités que le JavaScript du navigateur stan
 
 Installation  de NodeJS:
 
-https://github.com/FlorentRVE/projet_game/blob/1ec5f1dd7d044d8cf1f1fd15aa0c1fb75c0de6c8/img_4.png
+![Cover](https://github.com/FlorentRVE/projet_game/blob/1ec5f1dd7d044d8cf1f1fd15aa0c1fb75c0de6c8/img_4.png)
 
 
 Direction le site officiel de Nodejs pour télécharger la dernière version.  
@@ -128,7 +128,7 @@ On peut appuyer entrée pour passer toutes les question sauf à la question « 
 
 Cela va créer un fichier **package.json** dans lequel on retrouvera les détails des dépendances utilisé dans notre projet.  
 
-https://github.com/FlorentRVE/projet_game/blob/1ec5f1dd7d044d8cf1f1fd15aa0c1fb75c0de6c8/img_5.png
+![Cover](https://github.com/FlorentRVE/projet_game/blob/1ec5f1dd7d044d8cf1f1fd15aa0c1fb75c0de6c8/img_5.png)
 
 
 Ce point d’entrée server.js est le fichier JS à partir duquel l’exécution commence.  
