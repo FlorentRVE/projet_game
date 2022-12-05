@@ -206,4 +206,6 @@ On peut alors tester notre API avec un utilitaire comme POSTMAN
 
 ![Cover](https://github.com/FlorentRVE/projet_game/blob/ef52239185fd20d508779caf65f75080fd9ae8be/postman.PNG)
 
+On récupère bien le tableau des utilisateurs en effectuant une requête GET à l'adresse défini : 
 
+> http://localhost:3000/api/user
