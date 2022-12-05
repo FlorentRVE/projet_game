@@ -7,17 +7,17 @@ exports.displayUser = (req, res, next) => {
 };
 
 exports.login = async (req, res, next) => {
-    let bool = false;
+    let login = false;
 
     await User.find()
     .then(users => {
         users.forEach(element => {
             if(req.body.pseudo === element.pseudo && req.body.mdp === element.mdp) {
-                bool = true
+                login = true
             }
         });
 
-        if(bool === true) {
+        if(login === true) {
         return res.status(200).json(users)
         }
     }

@@ -29,7 +29,7 @@ goBtn.addEventListener("click", (e) => {
             fetch("http://localhost:3000/api/user/login", option)
             .then(response => response.json())
             .then(() => {
-                window.location.href = "chara_select.html?pseudo=" + player.pseudo; // Redirection
+                window.location.href = "chara_select.html?pseudo=" + player.pseudo; // Redirection avec le pseudo du joueur en paramètre
             })
             .catch(err => console.log(err))
     
