@@ -214,8 +214,10 @@ On récupère bien le tableau des utilisateurs en effectuant une requête GET à
 
 Une fois notre backend crée et opérationnell, on peut revenir sur notre Frontend pour y intégrer la logique permettant d'appeller notre API au besoin.  
 
-On prendra comme exemple la page de login.html  
-On va donc crée un fichier login.js. C'est le script qui sera appelé sur notre page login.html.
+On prendra ici comme exemple la page de login.html, le reste est à retrouver dans le code lui-même.   
+
+On va donc crée un fichier login.js.   
+C'est le script qui sera appelé sur notre page login.html.
 
 Sur cette page on doit envoyer un couple d'identifiant à l'API et recevoir une réponse.  
 
@@ -265,3 +267,6 @@ goBtn.addEventListener("click", (e) => {
 
 ```
 
+# 5) Création du jeu avec Kaboom JS
+
+Kaboom.js est ...
