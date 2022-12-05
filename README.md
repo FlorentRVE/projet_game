@@ -26,7 +26,12 @@ Configuration server > app > route > model > controller
 L’utilisateur arrive sur une page d’accueil qui redirige vers une page de connexion. 
 
 La page de connexion demande un couple d’identifiant ( Pseudo/Mot de passe).  
-Les identifiants sont prédéfinis dans la partie Backend.  
+Les identifiants sont prédéfinis dans la partie Backend, pour le test on a 3 users donc:  
+
+id:toto mdp:toto  
+id:titi mdp:titi  
+id:tata mdp:tata  
+
 Un appel de l’API avec le verbe POST permet d’envoyer les identifiants rentrés en input et de vérifier si ils sont présent dans la base de donnée (Ici un fichier JS).  
 
 Si les identifiant sont bien présent dans la BDD, l’utilisateur est redirigé vers une page permettant de sélectionner son personnage.  
