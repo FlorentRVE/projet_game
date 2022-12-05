@@ -99,7 +99,7 @@ On se retrouve alors avec cette structure.
 Le fichier **gitignore** permet de définir quelles fichiers on ne veut pas uploader sur GitHub. Ici on y ajoute « Node_modules » car volumineux.  
 
 
-## 3) Backend : Nodejs et Express
+# 3) Backend : Nodejs et Express
 
 Ici on va créer notre API appelé par le Front pour afficher les personnages et vérifier l’utilisateur.
 
