@@ -209,3 +209,42 @@ On peut alors tester notre API avec un utilitaire comme POSTMAN
 On récupère bien le tableau des utilisateurs en effectuant une requête GET à l'adresse défini : 
 
 > http://localhost:3000/api/user
+
+# 4) Frontend : ajout du JS pour appeler L’API et récupérer/envoyer données
+
+Une fois notre backend crée et opérationnell, on peut revenir sur notre Frontend pour y intégrer la logique permettant d'appeller notre API au besoin.  
+
+On prendra comme exemple la page de login. Sur cette page on doit envoyer un couple d'identifiant à l'API et recevoir une réponse.  
+Pour ce faire on utilisera **FETCH** avec la méthode POST:  
+```javascript
+goBtn.addEventListener("click", (e) => {
+
+    player = {
+        pseudo: pseudo.value,
+        mdp: mdp.value
+    }
+
+            // Définition du corps de la requête POST
+    
+            let option = {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json; charset=utf-8' },
+                body: JSON.stringify(player),
+            }
+    
+            // Requête POST à l'API
+    
+            fetch("http://localhost:3000/api/user/login", option)
+            .then(response => response.json())
+            .then(() => {
+                window.location.href = "chara_select.html?pseudo=" + player.pseudo; // Redirection avec le pseudo du joueur en paramètre
+            })
+            .catch(err => console.log(err))
+    
+            e.preventDefault() // Empeche l'activation du "submit" du boutton qui produit une erreur
+
+            console.log(player)
+
+})
+```
+
