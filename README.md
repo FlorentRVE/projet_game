@@ -214,37 +214,56 @@ On récupère bien le tableau des utilisateurs en effectuant une requête GET à
 
 Une fois notre backend crée et opérationnell, on peut revenir sur notre Frontend pour y intégrer la logique permettant d'appeller notre API au besoin.  
 
-On prendra comme exemple la page de login. Sur cette page on doit envoyer un couple d'identifiant à l'API et recevoir une réponse.  
-Pour ce faire on utilisera **FETCH** avec la méthode POST:  
+On prendra comme exemple la page de login.html  
+On va donc crée un fichier login.js. C'est le script qui sera appelé sur notre page login.html.
+
+Sur cette page on doit envoyer un couple d'identifiant à l'API et recevoir une réponse.  
+
+Pour ce faire on utilisera **FETCH** avec la méthode POST.  
+L'API FETCH fournit une interface pour la récupération des ressources à travers le réseau.  
+
 ```javascript
+// Récupère les inputs grâce au DOM
+let pseudo = document.getElementById("id");
+let mdp = document.getElementById("mdp");
+
+// // Récupère le bouton grâce au DOM
+let goBtn = document.getElementById("go_btn");
+
+// // Création d'objet "player" vide qui viendra acceuillir les données des inputs
+let player = {}
+
+// Au click sur le boutton on va déclencher les actions suivantes
 goBtn.addEventListener("click", (e) => {
 
     player = {
-        pseudo: pseudo.value,
+        pseudo: pseudo.value,  // On rempli notre objet "player" avec les valeurs récupérés de nos inputs
         mdp: mdp.value
     }
 
             // Définition du corps de la requête POST
     
             let option = {
-                method: 'POST',
-                headers: {'Content-Type': 'application/json; charset=utf-8' },
-                body: JSON.stringify(player),
+                method: 'POST', // La méthode utilisé , ici POST
+                headers: {'Content-Type': 'application/json; charset=utf-8' }, // Détail sur le type de donnée envoyé
+                body: JSON.stringify(player), // On converti notre objet en JSON pour pouvoir l'envoyer au serveur
             }
     
             // Requête POST à l'API
     
-            fetch("http://localhost:3000/api/user/login", option)
+            fetch("http://localhost:3000/api/user/login", option) // On utilise FETCH avec l'URL de la ressource à aller chercher et le corps de requête
             .then(response => response.json())
             .then(() => {
-                window.location.href = "chara_select.html?pseudo=" + player.pseudo; // Redirection avec le pseudo du joueur en paramètre
+                window.location.href = "chara_select.html?pseudo=" + player.pseudo; // Redirection vers la page choix du personnage avec le pseudo du joueur en paramètre
             })
             .catch(err => console.log(err))
     
-            e.preventDefault() // Empeche l'activation du "submit" du boutton qui produit une erreur
+            e.preventDefault() // Empeche l'activation du "submit" du boutton qui peut produire une erreur
 
             console.log(player)
 
 })
+
+
 ```
 
