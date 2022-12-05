@@ -196,14 +196,14 @@ On aura donc en résumé une structure comme tel :
 
 ### Test avec POSTMAN
 
-Une fois la mise en place achevé, on lance notre API avec:
+Une fois la mise en place achevé, on lance notre API depuis le terminal en se placant dans le dossier BACK puis avec la commande:
 
 ```javascript
 node server.js
 ```
 
-Une fois lancé, on peut tester notre API avec un utilitaire comme POSTMAN
+On peut alors tester notre API avec un utilitaire comme POSTMAN
 
-![Cover](https://github.com/FlorentRVE/projet_game/blob/0dfe025fabea576ca666dd765e7154d55aac02cd/schema.png)
+![Cover](https://github.com/FlorentRVE/projet_game/blob/ef52239185fd20d508779caf65f75080fd9ae8be/postman.PNG)
 
 
