@@ -260,8 +260,6 @@ goBtn.addEventListener("click", (e) => {
     
             e.preventDefault() // Empeche l'activation du "submit" du boutton qui peut produire une erreur
 
-            console.log(player)
-
 })
 
 
